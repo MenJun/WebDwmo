@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    
+    axios.get('https://localhost:5001/weatherforecast')
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+</script>
